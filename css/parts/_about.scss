@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@use 'mixin' as m;
+
+/* encounter */
+.encounter {
+    width: 100%;
+    background-image: url(../img/backgroundimg.png),url(../img/backgroundimg2.png);
+    background-position: 100% -100%,0 100%;
+    background-color: rgba($color: #FAF6F0, $alpha: 0.7);
+    background-blend-mode: lighten;
+
+}
+.encounter_flex {
+    padding-top: 180px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+
+    @include m.tab {
+        gap: 5%;
+    }
+    
+
+    h2 {
+        padding-bottom: 32px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;           
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ba4a0031;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            left: 38px;
+            top: 0;           
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #ba4a0031;
+        }
+    }
+
+    p {
+        padding-bottom: 24px;
+
+        &:nth-of-type(2) {
+            padding-bottom: 80px;
+        }
+    }
+
+    .encounter_left {
+        width: 28%;
+        @include m.tab {
+        width: 35%;
+    }
+
+        .encounter_img {
+            padding-bottom: 160px;
+            @include m.tab {
+                padding-bottom: 80px;
+            }
+        }
+    }
+
+    .encounter_center {
+        width: 40%;
+        @include m.tab {
+        width: 60%;
+    }
+    }
+
+    .encounter_right {
+        width: 28%;
+        @include m.tab {
+                width: 35%;
+            }
+
+        .encounter_img {
+            padding-top: 320px;
+            @include m.tab {
+                padding-top: 0px;
+                padding-bottom: 80px;
+            }
+        }
+
+    }
+
+    img {
+        width: 100%;
+    }
+    .left_img {
+        display: none;
+        @include m.tab {
+            display: block;
+        }
+    }
+    .right_img {
+        @include m.tab {
+            display: none;
+        }
+    }
+    .backimg::before{
+        content: "";
+        width: 500px;
+        height: 200px;
+        border-radius: 50%;
+    }
+}
+
+/* beer */
+.beer {
+    margin-bottom: 80px;
+    background-image: url(../img/beertank.png);
+    background-size: cover;
+    background-color: rgba($color: #F9E9DC, $alpha: 0.7);
+    background-blend-mode: lighten;
+
+    .beer_flex {
+        padding-block: 40px;
+        display: flex;
+        justify-content: space-between;
+        @include m.tab {
+            flex-direction: column;
+        }
+
+    }
+
+    .beer_left {
+        width: 60%;
+        @include m.tab {
+            width: 100%;
+        }
+
+        h2 {
+            padding-bottom: 40px;
+            text-shadow: 3px 3px 5px #ffffff;
+        }
+
+        p {
+            padding-bottom: 24px;
+            text-shadow: 3px 3px 5px #ffffff;
+        }
+    }
+
+    .beer_right {
+        width: 35%;
+        margin-top: 80px;
+        @include m.tab {
+            width: 50%;
+            margin: 0 auto;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}

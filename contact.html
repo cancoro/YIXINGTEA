@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <title>YIXING紅茶</title>
+    <meta name="description" content="中国・宜興（イーシン）で出会った、桃のような紅茶、YIXING TEAの紹介サイトです。" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Opti&family=Zen+Kaku+Gothic+New&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="top_logo">
+            <a href="index.html"><img src="img/logo.png" alt="ロゴ"></a>
+        </div>
+
+        <div class="toggle_btn back" id="toggle_btn">
+            <span>
+                <div class="border">
+                    <div class="btn_name" id="btn_name">Menu</div>
+                </div>
+            </span>
+        </div>
+        <div class="menu">
+            <ul class="list">
+                <li><a class="header_line back" href="index.html">Top</a></li>
+                <li><a class="header_line back" href="about.html">About</a></li>
+                <li><a class="header_line back" href="index.html#pick_up">Pick Up Item</a></li>
+                <li><a class="header_line back" href="index.html#company">Company</a></li>
+            </ul>
+            <div class="online_store">
+                <a href="#" target="_blank" class="btn">
+                    <div class="border">
+                        <div class="btn_name">公式<br>
+                            ストア</div>
+                    </div>
+                </a>
+
+                <a href="https://www.amazon.co.jp/?&tag=hydraamazonav-22&ref=pd_sl_7ibq2d37on_e&adgrpid=157529192841&hvpone=&hvptwo=&hvadid=675114138690&hvpos=&hvnetw=g&hvrand=13595635751608714425&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198546&hvtargid=kwd-10573980&hydadcr=27922_14701883"
+                    target="_blank" class="btn">
+                    <div class="border">
+                        <div class="btn_name en">Amazon</div>
+                    </div>
+                </a>
+
+                <a href="https://www.rakuten.co.jp/" class="btn">
+                    <div class="border">
+                        <div class="btn_name">楽天市場</div>
+                    </div>
+                </a>
+            </div>
+            <div class="insta">
+                <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram2.png" alt="インスタグラム" /></a>
+            </div>
+            <div class="logo">
+                <img src="img/logo.png" alt="ロゴ">
+            </div>
+        </div>
+
+        <div id="mask"></div>
+    </header>
+    <main>
+        <div class="contact wrapper">
+            <h3 class="section_title">Contact</h3>
+            <dl>
+                <dt><label for="name">お名前：</label></dt>
+                <dd><input type="name" name="name" id="name"></dd>
+                <dt><label for="mail">メールアドレス：</label></dt>
+                <dd><input type="mail" name="mail" id="mail"></dd>
+                <dt><label for="phone">電話番号：</dt>
+                <dd><input type="tel" name="phone" id="phone"></dd>
+                <dt><label for="message">お問い合せ内容：</label></dt>
+                <dd><textarea name="message" id="message"></textarea></dd>
+                <dd><input type="submit" id="submit"></dd>
+            </dl>
+        </div>
+
+
+    </main>
+
+    <footer>
+        <div class="footer_flex">
+            <div class="flex_left">
+                <a href="index.html" class="logo">
+                    <img src="img/logo.png" alt="ロゴ" />
+                </a>
+                <h5 class="name">YIXING TEA</h5>
+            </div>
+            <div class="flex_right">
+                <ul class="list">
+                    <li><a class="footer_line en" href="index.html">Top</a></li>
+                    <li><a class="footer_line en" href="about.html">About</a></li>
+                    <li><a class="footer_line en" href="index.html#pick_up">Pick Up Item</a></li>
+                    <li><a class="footer_line en" href="index.html#company">Company</a></li>
+                </ul>
+                <ul class="store_list">
+                    <li><a class="footer_line" href="#" target="_blank">公式ストア</a></li>
+                    <li>
+                        <a class="footer_line en"
+                            href="https://www.amazon.co.jp/?&tag=hydraamazonav-22&ref=pd_sl_7ibq2d37on_e&adgrpid=157529192841&hvpone=&hvptwo=&hvadid=675114138690&hvpos=&hvnetw=g&hvrand=13595635751608714425&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9198546&hvtargid=kwd-10573980&hydadcr=27922_14701883"
+                            target="_blank">Amazon</a>
+                    </li>
+                    <li><a class="footer_line" href="https://www.rakuten.co.jp/" target="_blank">楽天市場</a></li>
+                </ul>
+                <div>
+                    <a class="footer_line en" href="contact.html">Contact</a>
+                </div>
+                <div class="insta">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="img/instagram1.png"
+                            alt="インスタグラム" /></a>
+                </div>
+            </div>
+        </div>
+        <p class="en">©2025 YIXING TEA</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
